@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: chimera-config
+  labels:
+    app: project-chimera
+data:
+  NODE_ENV: "production"
+  PORT: "3000"
+  HOST: "0.0.0.0"
+  APP_URL: ""

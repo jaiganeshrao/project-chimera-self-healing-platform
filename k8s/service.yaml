@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: project-chimera-service
+  labels:
+    app: project-chimera
+spec:
+  type: ClusterIP
+  selector:
+    app: project-chimera
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP
